@@ -12,5 +12,5 @@ resource "scalr_tag" "example-x" {
   name       = "tag-xx"
 }
 resource "scalr_tag" "example-xxx" {
-  name       = "tag-xxx"
+  name       = "tag-xxxy"
 }
