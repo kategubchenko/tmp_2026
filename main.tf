@@ -7,6 +7,9 @@ terraform {
     }
 }
 
+resource "scalr_tag" "example" {
+  name       = "tag-1"
+}
 
 variable "run_id" {
   default = "run_id_2"
