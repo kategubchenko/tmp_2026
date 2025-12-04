@@ -21,6 +21,10 @@ resource "scalr_tag" "example" {
   name       = "tag-1"
 }
 
+resource "scalr_tag" "example2" {
+  name       = "tag-2"
+}
+
 variable "run_id" {
   default = "run_id_2"
   sensitive = true
