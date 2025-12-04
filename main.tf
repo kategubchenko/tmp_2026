@@ -7,19 +7,6 @@ terraform {
     }
 }
 
-data "scalr_environment" test {
-  name = "Environment-A"
-}
-
-resource "scalr_workspace" "cli-driven" {
-  name            = "cli-from_provider"
-  environment_id  = data.scalr_environment.test.id
-  deletion_protection_enabled = "false"
-}
-
-resource "scalr_tag" "example3" {
-  name       = "tag-3"
-}
 
 variable "run_id" {
   default = "run_id_2"
