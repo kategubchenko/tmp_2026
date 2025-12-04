@@ -11,3 +11,7 @@ terraform {
 resource "scalr_tag" "example-x" {
   name       = "tag-x"
 }
+
+resource "scalr_tag" "example-pr1" {
+  name       = "tag-pr1"
+}
