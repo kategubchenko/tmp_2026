@@ -17,6 +17,10 @@ resource "scalr_workspace" "cli-driven" {
   deletion_protection_enabled = "false"
 }
 
+resource "scalr_tag" "example3" {
+  name       = "tag-3"
+}
+
 variable "run_id" {
   default = "run_id_2"
   sensitive = true
