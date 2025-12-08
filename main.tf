@@ -7,9 +7,6 @@ terraform {
     }
 }
 
-resource "scalr_tag" "example" {
-  name       = "tag-1"
-}
 
 variable "run_id" {
   default = "run_id_2"
@@ -30,8 +27,6 @@ resource "random_integer" "timeout" {
     run_id = var.run_id
   }
 }
-
-
 
 resource "null_resource" "env_vars" {
   triggers = {
