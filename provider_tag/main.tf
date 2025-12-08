@@ -8,6 +8,6 @@ terraform {
 }
 
 
-resource "scalr_tag" "example-x" {
-  name       = "tag-xx"
+resource "scalr_tag" "example-1" {
+  name       = "tag-1"
 }
