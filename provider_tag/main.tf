@@ -7,7 +7,12 @@ terraform {
     }
 }
 
+variable "tag_count" {
+  sensitive = false
+  default = 1
+}
 
 resource "scalr_tag" "example-1" {
-  name       = "tag-1-11dec5"
+  count = var.tag_count
+  name       = "tag-1-11${count.index}"
 }
