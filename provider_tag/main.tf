@@ -9,7 +9,7 @@ terraform {
 
 variable "tag_count" {
   sensitive = false
-  default = 1
+  default = 2
 }
 
 resource "scalr_tag" "example-1" {
