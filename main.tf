@@ -18,7 +18,7 @@ variable "sleep_time" {
 }
 
 resource "random_integer" "timeout" {
-  count = 2
+  count = 1
  
   min = 32
   max = 160
