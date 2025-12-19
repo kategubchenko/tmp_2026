@@ -9,5 +9,5 @@ terraform {
 
 
 resource "scalr_tag" "example-1" {
-  name       = "tag-1-upd"
+  name       = "tag-1-pr2"
 }
