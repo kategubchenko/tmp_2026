@@ -5,10 +5,10 @@ resource "random_string" "test" {
 
 variable "string_count" {
   sensitive = false
-  default = "21"
+  default = "2"
 }
 
 variable "string_length" {
   sensitive = false
-  default = "22"
+  default = "2"
 }
