@@ -10,5 +10,5 @@ variable "string_count" {
 
 variable "string_length" {
   sensitive = false
-  default = "23"
+  default = "24"
 }
