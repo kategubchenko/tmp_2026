@@ -12,7 +12,7 @@ data "scalr_environment" test {
 }
 
 resource "scalr_workspace" "cli-driven" {
-  name            = "cli-from_provider-fix"
+  name            = "cli-from_provider-fix-sync"
   environment_id  = data.scalr_environment.test.id
   deletion_protection_enabled = "false"
 }
