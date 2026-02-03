@@ -5,7 +5,7 @@ resource "random_string" "test" {
 
 variable "string_count" {
   sensitive = false
-  default = "27"
+  default = "26"
 }
 
 variable "string_length" {
