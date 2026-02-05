@@ -17,3 +17,13 @@ data "scalr_vcs_provider" "by_name" {
 output "vcs_provider_id" {
   value = data.scalr_vcs_provider.by_name.id
   }
+
+
+data "scalr_environment" "example" {
+  name       = "scalr provider"
+}
+
+resource "scalr_workspace" "example" {
+  name              = "my-workspace-name"
+  environment_id    = data.scalr_environment.example.id
+}
