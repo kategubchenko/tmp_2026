@@ -1,11 +1,12 @@
 terraform {
-    required_providers {
-        scalr = {
-            source = "registry.scalr.io/scalr/scalr"
-            version= "3.12.0"
-        }
+  required_providers {
+    scalr = {
+      source  = "registry.scalr.dev/scalr/scalr"
+      version = "1.0.0-rc-release-3.13.0"
     }
+  }
 }
+
 variable "vcs_name" {
 }
 
